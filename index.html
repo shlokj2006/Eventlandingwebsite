@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFlow Summit 2024 - Where Innovation Meets Opportunity</title>
+  <meta name="description" content="Join 500+ tech leaders, innovators, and entrepreneurs at TechFlow Summit 2024. Network, learn, and discover the future of technology.">
+  
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Sofia Pro Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    .hero-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .countdown-box {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .scrollspy-active {
+      color: #667eea !important;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-900">
+  
+  <!-- Navigation -->
+  <nav data-id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div data-id="nav-logo" class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+            <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+          </div>
+          <span class="text-xl font-bold text-gray-900">TechFlow Summit</span>
+        </div>
+        
+        <div data-id="nav-menu" class="hidden md:flex items-center space-x-8">
+          <a href="#hero" data-id="nav-home" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+          <a href="#details" data-id="nav-details" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Details</a>
+          <a href="#speakers" data-id="nav-speakers" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Speakers</a>
+          <a href="#agenda" data-id="nav-agenda" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Agenda</a>
+          <a href="#register" data-id="nav-register" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all">Register</a>
+        </div>
+        
+        <button data-id="mobile-menu-btn" class="md:hidden p-2">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div data-id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#hero" data-id="mobile-nav-home" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#details" data-id="mobile-nav-details" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Details</a>
+          <a href="#speakers" data-id="mobile-nav-speakers" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Speakers</a>
+          <a href="#agenda" data-id="mobile-nav-agenda" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Agenda</a>
+          <a href="#register" data-id="mobile-nav-register" class="block px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" data-id="hero-section" class="min-h-screen flex items-center gradient-bg hero-pattern relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <div data-id="hero-content" class="max-w-4xl mx-auto">
+        <h1 data-id="hero-title" class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          TechFlow Summit
+          <span class="block text-3xl md:text-5xl text-blue-200">2024</span>
+        </h1>
+        <p data-id="hero-tagline" class="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto">
+          Where Innovation Meets Opportunity - Join 500+ tech leaders, innovators, and entrepreneurs shaping the future
+        </p>
+        
+        <!-- Event Key Info -->
+        <div data-id="hero-info" class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-10">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="calendar" class="w-5 h-5"></i>
+            <span class="text-lg">March 15-16, 2024</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+            <span class="text-lg">San Francisco Convention Center</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i data-lucide="users" class="w-5 h-5"></i>
+            <span class="text-lg">500+ Attendees</span>
+          </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+        <div data-id="hero-cta" class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+          <a href="#register" data-id="hero-register-btn" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+            Register Now - $299
+          </a>
+          <a href="#details" data-id="hero-learn-more-btn" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Countdown Timer -->
+    <div data-id="countdown-container" class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div class="countdown-box rounded-2xl px-6 py-4">
+        <p data-id="countdown-label" class="text-white text-sm mb-2 text-center">Event Starts In</p>
+        <div data-id="countdown-timer" class="flex space-x-4 text-white">
+          <div class="text-center">
+            <div data-id="days" class="text-2xl font-bold">--</div>
+            <div class="text-xs">Days</div>
+          </div>
+          <div class="text-center">
+            <div data-id="hours" class="text-2xl font-bold">--</div>
+            <div class="text-xs">Hours</div>
+          </div>
+          <div class="text-center">
+            <div data-id="minutes" class="text-2xl font-bold">--</div>
+            <div class="text-xs">Minutes</div>
+          </div>
+          <div class="text-center">
+            <div data-id="seconds" class="text-2xl font-bold">--</div>
+            <div class="text-xs">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Details -->
+  <section id="details" data-id="details-section" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 data-id="details-title" class="text-4xl md:text-5xl font-bold mb-6">Event Details</h2>
+        <p data-id="details-subtitle" class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Two days of immersive learning, networking, and innovation in the heart of Silicon Valley
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Event Info -->
+        <div data-id="event-info" class="space-y-8">
+          <div data-id="date-time-info" class="flex items-start space-x-4">
+            <div class="bg-blue-100 p-3 rounded-lg">
+              <i data-lucide="calendar" class="w-6 h-6 text-blue-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Date & Time</h3>
+              <p class="text-gray-600">March 15-16, 2024</p>
+              <p class="text-gray-600">9:00 AM - 6:00 PM (PST)</p>
+            </div>
+          </div>
+          
+          <div data-id="venue-info" class="flex items-start space-x-4">
+            <div class="bg-green-100 p-3 rounded-lg">
+              <i data-lucide="map-pin" class="w-6 h-6 text-green-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Venue</h3>
+              <p class="text-gray-600">San Francisco Convention Center</p>
+              <p class="text-gray-600">747 Howard St, San Francisco, CA 94103</p>
+            </div>
+          </div>
+          
+          <div data-id="parking-info" class="flex items-start space-x-4">
+            <div class="bg-purple-100 p-3 rounded-lg">
+              <i data-lucide="car" class="w-6 h-6 text-purple-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Parking</h3>
+              <p class="text-gray-600">Valet parking available</p>
+              <p class="text-gray-600">Public parking nearby</p>
+            </div>
+          </div>
+          
+          <div data-id="accessibility-info" class="flex items-start space-x-4">
+            <div class="bg-orange-100 p-3 rounded-lg">
+              <i data-lucide="accessibility" class="w-6 h-6 text-orange-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Accessibility</h3>
+              <p class="text-gray-600">Fully accessible venue</p>
+              <p class="text-gray-600">Sign language interpreters available</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Map Placeholder -->
+        <div data-id="map-container" class="bg-gray-200 rounded-2xl h-96 flex items-center justify-center">
+          <div class="text-center text-gray-500">
+            <i data-lucide="map" class="w-16 h-16 mx-auto mb-4"></i>
+            <p class="text-lg">Interactive Map</p>
+            <p class="text-sm">San Francisco Convention Center</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features & Highlights -->
+  <section data-id="features-section" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 data-id="features-title" class="text-4xl md:text-5xl font-bold mb-6">What Makes This Special</h2>
+        <p data-id="features-subtitle" class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Experience cutting-edge technology, network with industry leaders, and discover opportunities that will shape your future
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div data-id="feature-1" class="bg-white p-8 rounded-2xl card-hover">
+          <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Elite Networking</h3>
+          <p class="text-gray-600">Connect with 500+ tech leaders, VCs, and innovators from top companies worldwide.</p>
+        </div>
+        
+        <div data-id="feature-2" class="bg-white p-8 rounded-2xl card-hover">
+          <div class="bg-green-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="lightbulb" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Cutting-Edge Insights</h3>
+          <p class="text-gray-600">Learn about AI, blockchain, quantum computing, and emerging technologies shaping tomorrow.</p>
+        </div>
+        
+        <div data-id="feature-3" class="bg-white p-8 rounded-2xl card-hover">
+          <div class="bg-purple-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="rocket" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Startup Showcase</h3>
+          <p class="text-gray-600">Discover the next unicorns and witness live pitch competitions from promising startups.</p>
+        </div>
+        
+        <div data-id="feature-4" class="bg-white p-8 rounded-2xl card-hover">
+          <div class="bg-red-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="award" class="w-8 h-8 text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Industry Awards</h3>
+          <p class="text-gray-600">Celebrate innovation with our annual Tech Innovation Awards ceremony.</p>
+        </div>
+        
+        <div data-id="feature-5" class="bg-white p-8 rounded-2xl card-hover">
+          <div class="bg-yellow-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="utensils" class="w-8 h-8 text-yellow-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Gourmet Experience</h3>
+          <p class="text-gray-600">Enjoy premium catering, craft cocktails, and networking dinners throughout the event.</p>
+        </div>
+        
+        <div data-id="feature-6" class="bg-white p-8 rounded-2xl card-hover">
+          <div class="bg-indigo-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="gift" class="w-8 h-8 text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Exclusive Swag</h3>
+          <p class="text-gray-600">Take home premium tech gadgets, branded merchandise, and exclusive conference memorabilia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section id="speakers" data-id="speakers-section" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 data-id="speakers-title" class="text-4xl md:text-5xl font-bold mb-6">Featured Speakers</h2>
+        <p data-id="speakers-subtitle" class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Learn from visionary leaders and industry pioneers who are shaping the future of technology
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div data-id="speaker-1" class="text-center group">
+          <div class="relative mb-6">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" 
+                 alt="Alex Chen - AI Pioneer" 
+                 class="w-40 h-40 rounded-full mx-auto object-cover group-hover:scale-105 transition-transform">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">
+              Keynote
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Alex Chen</h3>
+          <p class="text-blue-600 mb-3">AI Pioneer & Tech Entrepreneur</p>
+          <p class="text-gray-600 text-sm">Former OpenAI researcher, founder of three successful AI startups, and author of "The Future of Human-AI Collaboration"</p>
+        </div>
+        
+        <div data-id="speaker-2" class="text-center group">
+          <div class="relative mb-6">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face" 
+                 alt="Sarah Martinez - Blockchain Expert" 
+                 class="w-40 h-40 rounded-full mx-auto object-cover group-hover:scale-105 transition-transform">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+              Panel
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Sarah Martinez</h3>
+          <p class="text-green-600 mb-3">Blockchain Innovation Lead</p>
+          <p class="text-gray-600 text-sm">Leading blockchain adoption at Fortune 500 companies, 10+ years in fintech, and advisor to multiple DeFi protocols</p>
+        </div>
+        
+        <div data-id="speaker-3" class="text-center group">
+          <div class="relative mb-6">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" 
+                 alt="David Kim - Quantum Computing Researcher" 
+                 class="w-40 h-40 rounded-full mx-auto object-cover group-hover:scale-105 transition-transform">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white px-3 py-1 rounded-full text-sm">
+              Workshop
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">David Kim</h3>
+          <p class="text-purple-600 mb-3">Quantum Computing Researcher</p>
+          <p class="text-gray-600 text-sm">MIT professor, quantum algorithm pioneer, and consultant for major tech companies exploring quantum advantage</p>
+        </div>
+        
+        <div data-id="speaker-4" class="text-center group">
+          <div class="relative mb-6">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face" 
+                 alt="Emily Rodriguez - Sustainable Tech Advocate" 
+                 class="w-40 h-40 rounded-full mx-auto object-cover group-hover:scale-105 transition-transform">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+              Talk
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Emily Rodriguez</h3>
+          <p class="text-green-600 mb-3">Sustainable Tech Advocate</p>
+          <p class="text-gray-600 text-sm">Environmental engineer turned tech executive, leading green technology initiatives at major corporations</p>
+        </div>
+        
+        <div data-id="speaker-5" class="text-center group">
+          <div class="relative mb-6">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face" 
+                 alt="Marcus Johnson - VC Partner" 
+                 class="w-40 h-40 rounded-full mx-auto object-cover group-hover:scale-105 transition-transform">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+              Fireside Chat
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Marcus Johnson</h3>
+          <p class="text-orange-600 mb-3">Venture Capital Partner</p>
+          <p class="text-gray-600 text-sm">Managing partner at leading VC fund, invested in 50+ successful startups, and mentor to emerging entrepreneurs</p>
+        </div>
+        
+        <div data-id="speaker-6" class="text-center group">
+          <div class="relative mb-6">
+            <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop&crop=face" 
+                 alt="Lisa Wang - Product Innovation Director" 
+                 class="w-40 h-40 rounded-full mx-auto object-cover group-hover:scale-105 transition-transform">
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white px-3 py-1 rounded-full text-sm">
+              Workshop
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Lisa Wang</h3>
+          <p class="text-pink-600 mb-3">Product Innovation Director</p>
+          <p class="text-gray-600 text-sm">Design thinking expert, led product teams at unicorn startups, and author of "User-Centered Innovation"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section id="agenda" data-id="agenda-section" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 data-id="agenda-title" class="text-4xl md:text-5xl font-bold mb-6">Event Agenda</h2>
+        <p data-id="agenda-subtitle" class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Two days packed with insights, networking, and hands-on learning experiences
+        </p>
+      </div>
+      
+      <!-- Day Tabs -->
+      <div data-id="day-tabs" class="flex justify-center mb-12">
+        <div class="bg-white rounded-full p-1 shadow-lg">
+          <button data-id="day1-tab" class="px-8 py-3 rounded-full font-semibold day-tab active bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+            Day 1 - March 15
+          </button>
+          <button data-id="day2-tab" class="px-8 py-3 rounded-full font-semibold day-tab text-gray-600 hover:text-gray-900">
+            Day 2 - March 16
+          </button>
+        </div>
+      </div>
+      
+      <!-- Day 1 Agenda -->
+      <div data-id="day1-content" class="day-content">
+        <div class="space-y-6">
+          <div data-id="agenda-item-1" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-blue-100 p-3 rounded-lg">
+                  <i data-lucide="coffee" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Registration & Welcome Coffee</h3>
+                  <p class="text-gray-600">Network with fellow attendees and enjoy premium coffee while picking up your conference materials</p>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-blue-600">9:00</div>
+                <div class="text-sm text-gray-500">AM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div data-id="agenda-item-2" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-green-100 p-3 rounded-lg">
+                  <i data-lucide="mic" class="w-6 h-6 text-green-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Opening Keynote: The Future of AI</h3>
+                  <p class="text-gray-600">Alex Chen explores the next decade of AI innovation and its impact on society</p>
+                  <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm mt-2">Keynote</span>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-green-600">10:00</div>
+                <div class="text-sm text-gray-500">AM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div data-id="agenda-item-3" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-purple-100 p-3 rounded-lg">
+                  <i data-lucide="users" class="w-6 h-6 text-purple-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Panel: Blockchain in Enterprise</h3>
+                  <p class="text-gray-600">Industry leaders discuss real-world blockchain adoption and implementation challenges</p>
+                  <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm mt-2">Panel Discussion</span>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-purple-600">11:30</div>
+                <div class="text-sm text-gray-500">AM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div data-id="agenda-item-4" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-orange-100 p-3 rounded-lg">
+                  <i data-lucide="utensils" class="w-6 h-6 text-orange-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Networking Lunch</h3>
+                  <p class="text-gray-600">Gourmet lunch with structured networking opportunities and table topics</p>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-orange-600">12:30</div>
+                <div class="text-sm text-gray-500">PM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div data-id="agenda-item-5" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-red-100 p-3 rounded-lg">
+                  <i data-lucide="zap" class="w-6 h-6 text-red-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Startup Pitch Competition</h3>
+                  <p class="text-gray-600">Watch promising startups pitch their innovative solutions to a panel of VCs</p>
+                  <span class="inline-block bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm mt-2">Competition</span>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-red-600">2:00</div>
+                <div class="text-sm text-gray-500">PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Day 2 Agenda (Hidden by default) -->
+      <div data-id="day2-content" class="day-content hidden">
+        <div class="space-y-6">
+          <div data-id="day2-agenda-item-1" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-indigo-100 p-3 rounded-lg">
+                  <i data-lucide="brain" class="w-6 h-6 text-indigo-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Workshop: Quantum Computing Basics</h3>
+                  <p class="text-gray-600">Hands-on introduction to quantum algorithms with David Kim</p>
+                  <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm mt-2">Workshop</span>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-indigo-600">9:00</div>
+                <div class="text-sm text-gray-500">AM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div data-id="day2-agenda-item-2" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-green-100 p-3 rounded-lg">
+                  <i data-lucide="leaf" class="w-6 h-6 text-green-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Sustainable Technology Panel</h3>
+                  <p class="text-gray-600">Emily Rodriguez leads discussion on environmental impact of tech innovations</p>
+                  <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm mt-2">Panel</span>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-green-600">11:00</div>
+                <div class="text-sm text-gray-500">AM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div data-id="day2-agenda-item-3" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-yellow-100 p-3 rounded-lg">
+                  <i data-lucide="award" class="w-6 h-6 text-yellow-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Tech Innovation Awards</h3>
+                  <p class="text-gray-600">Annual ceremony recognizing breakthrough innovations and industry pioneers</p>
+                  <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm mt-2">Awards</span>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-yellow-600">4:00</div>
+                <div class="text-sm text-gray-500">PM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div data-id="day2-agenda-item-4" class="bg-white rounded-2xl p-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="flex items-start space-x-6">
+                <div class="bg-pink-100 p-3 rounded-lg">
+                  <i data-lucide="glass-water" class="w-6 h-6 text-pink-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Closing Reception</h3>
+                  <p class="text-gray-600">Celebrate achievements with cocktails, networking, and live music</p>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 text-right">
+                <div class="text-2xl font-bold text-pink-600">5:30</div>
+                <div class="text-sm text-gray-500">PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="register" data-id="register-section" class="py-20 gradient-bg hero-pattern">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 text-white">
+        <h2 data-id="register-title" class="text-4xl md:text-5xl font-bold mb-6">Reserve Your Spot</h2>
+        <p data-id="register-subtitle" class="text-xl text-blue-100 max-w-3xl mx-auto">
+          Join 500+ innovators, leaders, and visionaries at the most anticipated tech event of 2024
+        </p>
+      </div>
+      
+      <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
+        <form data-id="registration-form" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label data-id="first-name-label" for="firstName" class="block text-sm font-semibold text-gray-700 mb-2">First Name *</label>
+              <input data-id="first-name-input" type="text" id="firstName" name="firstName" required 
+                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+            </div>
+            <div>
+              <label data-id="last-name-label" for="lastName" class="block text-sm font-semibold text-gray-700 mb-2">Last Name *</label>
+              <input data-id="last-name-input" type="text" id="lastName" name="lastName" required 
+                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+            </div>
+          </div>
+          
+          <div>
+            <label data-id="email-label" for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+            <input data-id="email-input" type="email" id="email" name="email" required 
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+          </div>
+          
+          <div>
+            <label data-id="company-label" for="company" class="block text-sm font-semibold text-gray-700 mb-2">Company/Organization</label>
+            <input data-id="company-input" type="text" id="company" name="company" 
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+          </div>
+          
+          <div>
+            <label data-id="role-label" for="role" class="block text-sm font-semibold text-gray-700 mb-2">Job Title/Role</label>
+            <select data-id="role-select" id="role" name="role" 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+              <option value="">Select your role</option>
+              <option value="founder">Founder/CEO</option>
+              <option value="engineer">Engineer/Developer</option>
+              <option value="designer">Designer</option>
+              <option value="pm">Product Manager</option>
+              <option value="investor">Investor/VC</option>
+              <option value="student">Student</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div>
+            <label data-id="interests-label" for="interests" class="block text-sm font-semibold text-gray-700 mb-2">Areas of Interest</label>
+            <div data-id="interests-checkboxes" class="grid md:grid-cols-2 gap-3">
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" name="interests" value="ai" class="rounded text-blue-600 focus:ring-blue-500">
+                <span class="text-gray-700">Artificial Intelligence</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" name="interests" value="blockchain" class="rounded text-blue-600 focus:ring-blue-500">
+                <span class="text-gray-700">Blockchain</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" name="interests" value="quantum" class="rounded text-blue-600 focus:ring-blue-500">
+                <span class="text-gray-700">Quantum Computing</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" name="interests" value="sustainability" class="rounded text-blue-600 focus:ring-blue-500">
+                <span class="text-gray-700">Sustainable Tech</span>
+              </label>
+            </div>
+          </div>
+          
+          <div>
+            <label data-id="dietary-label" for="dietary" class="block text-sm font-semibold text-gray-700 mb-2">Dietary Restrictions</label>
+            <textarea data-id="dietary-textarea" id="dietary" name="dietary" rows="3" 
+                      placeholder="Please let us know about any dietary restrictions or allergies..."
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"></textarea>
+          </div>
+          
+          <div data-id="newsletter-checkbox" class="flex items-start space-x-3">
+            <input type="checkbox" id="newsletter" name="newsletter" class="mt-1 rounded text-blue-600 focus:ring-blue-500">
+            <label for="newsletter" class="text-sm text-gray-600">
+              I'd like to receive updates about future events and tech industry insights
+            </label>
+          </div>
+          
+          <div data-id="ticket-options" class="bg-gray-50 rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">Select Ticket Option</h3>
+            <div class="space-y-3">
+              <label class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-white transition-colors cursor-pointer">
+                <div class="flex items-center space-x-3">
+                  <input type="radio" name="ticket" value="early-bird" class="text-blue-600 focus:ring-blue-500">
+                  <div>
+                    <div class="font-semibold">Early Bird - Full Access</div>
+                    <div class="text-sm text-gray-600">All sessions, meals, networking events</div>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="text-2xl font-bold text-green-600">$299</div>
+                  <div class="text-sm text-gray-500 line-through">$399</div>
+                </div>
+              </label>
+              
+              <label class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-white transition-colors cursor-pointer">
+                <div class="flex items-center space-x-3">
+                  <input type="radio" name="ticket" value="student" class="text-blue-600 focus:ring-blue-500">
+                  <div>
+                    <div class="font-semibold">Student Discount</div>
+                    <div class="text-sm text-gray-600">Valid student ID required</div>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="text-2xl font-bold text-blue-600">$99</div>
+                </div>
+              </label>
+            </div>
+          </div>
+          
+          <button data-id="register-submit-btn" type="submit" 
+                  class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-4 rounded-lg font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg">
+            Secure My Spot - Register Now
+          </button>
+          
+          <p data-id="register-disclaimer" class="text-sm text-gray-500 text-center">
+            * Registration includes all sessions, meals, networking events, and conference materials. 
+            Refund policy: Full refund available until March 1st, 2024.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof & Testimonials -->
+  <section data-id="testimonials-section" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 data-id="testimonials-title" class="text-4xl md:text-5xl font-bold mb-6">What Attendees Say</h2>
+        <p data-id="testimonials-subtitle" class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Join thousands of satisfied attendees who have transformed their careers and businesses at our events
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div data-id="testimonial-1" class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl card-hover">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" 
+                 alt="John Smith" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">John Smith</h4>
+              <p class="text-sm text-gray-600">CTO, TechStart Inc</p>
+            </div>
+          </div>
+          <p class="text-gray-700 italic">"The networking opportunities were incredible. I met three potential co-founders and closed a major partnership deal. Best investment I've made for my startup."</p>
+          <div class="flex mt-4 text-yellow-400">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+        </div>
+        
+        <div data-id="testimonial-2" class="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl card-hover">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" 
+                 alt="Maria Garcia" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Maria Garcia</h4>
+              <p class="text-sm text-gray-600">AI Researcher, Meta</p>
+            </div>
+          </div>
+          <p class="text-gray-700 italic">"The quality of speakers and depth of technical content exceeded my expectations. I learned cutting-edge techniques I immediately applied to my research."</p>
+          <div class="flex mt-4 text-yellow-400">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+        </div>
+        
+        <div data-id="testimonial-3" class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl card-hover">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" 
+                 alt="David Lee" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">David Lee</h4>
+              <p class="text-sm text-gray-600">Venture Partner, Sequoia</p>
+            </div>
+          </div>
+          <p class="text-gray-700 italic">"Perfect blend of technical depth and business insights. I discovered five promising startups and made strategic connections that led to three investments."</p>
+          <div class="flex mt-4 text-yellow-400">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Stats -->
+      <div data-id="event-stats" class="mt-16 grid md:grid-cols-4 gap-8 text-center">
+        <div data-id="stat-1">
+          <div class="text-4xl font-bold text-blue-600 mb-2">2,500+</div>
+          <div class="text-gray-600">Past Attendees</div>
+        </div>
+        <div data-id="stat-2">
+          <div class="text-4xl font-bold text-green-600 mb-2">98%</div>
+          <div class="text-gray-600">Satisfaction Rate</div>
+        </div>
+        <div data-id="stat-3">
+          <div class="text-4xl font-bold text-purple-600 mb-2">50+</div>
+          <div class="text-gray-600">Industry Experts</div>
+        </div>
+        <div data-id="stat-4">
+          <div class="text-4xl font-bold text-orange-600 mb-2">$2M+</div>
+          <div class="text-gray-600">Deals Closed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section data-id="sponsors-section" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 data-id="sponsors-title" class="text-4xl md:text-5xl font-bold mb-6">Our Partners</h2>
+        <p data-id="sponsors-subtitle" class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Proudly supported by industry-leading companies and organizations
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+        <div data-id="sponsor-1" class="bg-white p-6 rounded-xl card-hover flex items-center justify-center h-24">
+          <div class="text-2xl font-bold text-gray-400">TechCorp</div>
+        </div>
+        <div data-id="sponsor-2" class="bg-white p-6 rounded-xl card-hover flex items-center justify-center h-24">
+          <div class="text-2xl font-bold text-gray-400">InnovateAI</div>
+        </div>
+        <div data-id="sponsor-3" class="bg-white p-6 rounded-xl card-hover flex items-center justify-center h-24">
+          <div class="text-2xl font-bold text-gray-400">BlockChain+</div>
+        </div>
+        <div data-id="sponsor-4" class="bg-white p-6 rounded-xl card-hover flex items-center justify-center h-24">
+          <div class="text-2xl font-bold text-gray-400">CloudVentures</div>
+        </div>
+        <div data-id="sponsor-5" class="bg-white p-6 rounded-xl card-hover flex items-center justify-center h-24">
+          <div class="text-2xl font-bold text-gray-400">DataFlow</div>
+        </div>
+        <div data-id="sponsor-6" class="bg-white p-6 rounded-xl card-hover flex items-center justify-center h-24">
+          <div class="text-2xl font-bold text-gray-400">FutureTech</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section data-id="faq-section" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 data-id="faq-title" class="text-4xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h2>
+        <p data-id="faq-subtitle" class="text-xl text-gray-600">
+          Everything you need to know about attending TechFlow Summit 2024
+        </p>
+      </div>
+      
+      <div data-id="faq-container" class="space-y-4">
+        <div data-id="faq-1" class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left p-6 focus:outline-none hover:bg-gray-50 flex items-center justify-between">
+            <span class="text-lg font-semibold">What's included in my ticket?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform faq-chevron"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Your ticket includes access to all sessions, workshops, networking events, breakfast and lunch both days, coffee breaks, conference materials, and exclusive swag bag. Parking and accommodation are not included.</p>
+          </div>
+        </div>
+        
+        <div data-id="faq-2" class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left p-6 focus:outline-none hover:bg-gray-50 flex items-center justify-between">
+            <span class="text-lg font-semibold">Is there a dress code?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform faq-chevron"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Business casual attire is recommended. Think smart casual - you want to be comfortable for a full day of sessions while looking professional for networking opportunities.</p>
+          </div>
+        </div>
+        
+        <div data-id="faq-3" class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left p-6 focus:outline-none hover:bg-gray-50 flex items-center justify-between">
+            <span class="text-lg font-semibold">Can I get a refund if I can't attend?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform faq-chevron"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Full refunds are available until March 1st, 2024. After that date, tickets can be transferred to another person or you can receive a 50% credit toward next year's event.</p>
+          </div>
+        </div>
+        
+        <div data-id="faq-4" class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left p-6 focus:outline-none hover:bg-gray-50 flex items-center justify-between">
+            <span class="text-lg font-semibold">Are sessions recorded?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform faq-chevron"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Yes! All keynotes and main stage sessions will be recorded and made available to attendees within 48 hours after the event. Workshop recordings may have limited availability due to interactive nature.</p>
+          </div>
+        </div>
+        
+        <div data-id="faq-5" class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left p-6 focus:outline-none hover:bg-gray-50 flex items-center justify-between">
+            <span class="text-lg font-semibold">Is the venue accessible?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform faq-chevron"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">Yes, the San Francisco Convention Center is fully ADA compliant. We also provide sign language interpreters upon request (please contact us at least 2 weeks in advance). All materials are available in digital formats.</p>
+          </div>
+        </div>
+        
+        <div data-id="faq-6" class="border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left p-6 focus:outline-none hover:bg-gray-50 flex items-center justify-between">
+            <span class="text-lg font-semibold">What COVID safety measures are in place?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform faq-chevron"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6">
+            <p class="text-gray-600">We follow all local health guidelines and have enhanced cleaning protocols. Hand sanitizer stations are available throughout the venue. We recommend staying home if you feel unwell and offer virtual attendance options for main sessions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section data-id="contact-section" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 data-id="contact-title" class="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+        <p data-id="contact-subtitle" class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Have questions? Need assistance? Our team is here to help make your experience exceptional
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div data-id="contact-general" class="bg-white p-8 rounded-2xl text-center card-hover">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="mail" class="w-8 h-8 text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">General Inquiries</h3>
+          <p class="text-gray-600 mb-4">Questions about the event, agenda, or speakers</p>
+          <a href="mailto:info@techflowsummit.com" class="text-blue-600 hover:text-blue-700 font-medium">info@techflowsummit.com</a>
+        </div>
+        
+        <div data-id="contact-registration" class="bg-white p-8 rounded-2xl text-center card-hover">
+          <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="ticket" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Registration Support</h3>
+          <p class="text-gray-600 mb-4">Help with tickets, refunds, or transfers</p>
+          <a href="mailto:registration@techflowsummit.com" class="text-green-600 hover:text-green-700 font-medium">registration@techflowsummit.com</a>
+        </div>
+        
+        <div data-id="contact-media" class="bg-white p-8 rounded-2xl text-center card-hover">
+          <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="camera" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Media & Press</h3>
+          <p class="text-gray-600 mb-4">Press credentials and media partnerships</p>
+          <a href="mailto:media@techflowsummit.com" class="text-purple-600 hover:text-purple-700 font-medium">media@techflowsummit.com</a>
+        </div>
+      </div>
+      
+      <!-- Social Links -->
+      <div data-id="social-links" class="flex justify-center items-center space-x-6 mt-12">
+        <a href="#" class="bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-50 transition-colors">
+          <i data-lucide="twitter" class="w-5 h-5 text-blue-500"></i>
+        </a>
+        <a href="#" class="bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-50 transition-colors">
+          <i data-lucide="linkedin" class="w-5 h-5 text-blue-600"></i>
+        </a>
+        <a href="#" class="bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-pink-50 transition-colors">
+          <i data-lucide="instagram" class="w-5 h-5 text-pink-500"></i>
+        </a>
+        <a href="#" class="bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-red-50 transition-colors">
+          <i data-lucide="youtube" class="w-5 h-5 text-red-500"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer data-id="footer" class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div data-id="footer-brand" class="md:col-span-2">
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+              <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="text-xl font-bold">TechFlow Summit</span>
+          </div>
+          <p class="text-gray-400 mb-6 max-w-md">
+            Where Innovation Meets Opportunity. Join the most impactful tech conference of 2024 and connect with the future of technology.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i data-lucide="twitter" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div data-id="footer-links">
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#details" class="hover:text-white transition-colors">Event Details</a></li>
+            <li><a href="#speakers" class="hover:text-white transition-colors">Speakers</a></li>
+            <li><a href="#agenda" class="hover:text-white transition-colors">Agenda</a></li>
+            <li><a href="#register" class="hover:text-white transition-colors">Register</a></li>
+          </ul>
+        </div>
+        
+        <div data-id="footer-legal">
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Refund Policy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Code of Conduct</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div data-id="footer-bottom" class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
+        <p>© 2024 TechFlow Summit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Made with wowdev.ai badge -->
+  <div data-id="badge-container" data-source="components/badge.html"></div>
+
+  <!-- JavaScript -->
+  <script type="module">
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Countdown Timer
+    function updateCountdown() {
+      const eventDate = new Date('2024-03-15T09:00:00').getTime();
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+      } else {
+        document.getElementById('countdown-container').innerHTML = '<div class="countdown-box rounded-2xl px-6 py-4"><p class="text-white text-center">Event is Live!</p></div>';
+      }
+    }
+
+    // Update countdown every second
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Day tabs for agenda
+    const day1Tab = document.getElementById('day1-tab');
+    const day2Tab = document.getElementById('day2-tab');
+    const day1Content = document.getElementById('day1-content');
+    const day2Content = document.getElementById('day2-content');
+
+    day1Tab.addEventListener('click', () => {
+      day1Tab.classList.add('active', 'bg-gradient-to-r', 'from-blue-500', 'to-purple-600', 'text-white');
+      day1Tab.classList.remove('text-gray-600');
+      day2Tab.classList.remove('active', 'bg-gradient-to-r', 'from-blue-500', 'to-purple-600', 'text-white');
+      day2Tab.classList.add('text-gray-600');
+      day1Content.classList.remove('hidden');
+      day2Content.classList.add('hidden');
+    });
+
+    day2Tab.addEventListener('click', () => {
+      day2Tab.classList.add('active', 'bg-gradient-to-r', 'from-blue-500', 'to-purple-600', 'text-white');
+      day2Tab.classList.remove('text-gray-600');
+      day1Tab.classList.remove('active', 'bg-gradient-to-r', 'from-blue-500', 'to-purple-600', 'text-white');
+      day1Tab.classList.add('text-gray-600');
+      day2Content.classList.remove('hidden');
+      day1Content.classList.add('hidden');
+    });
+
+    // FAQ Accordions
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const chevron = button.querySelector('.faq-chevron');
+        const isOpen = !answer.classList.contains('hidden');
+
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+          otherAnswer.classList.add('hidden');
+        });
+        document.querySelectorAll('.faq-chevron').forEach(otherChevron => {
+          otherChevron.classList.remove('rotate-180');
+        });
+
+        // Toggle current item
+        if (!isOpen) {
+          answer.classList.remove('hidden');
+          chevron.classList.add('rotate-180');
+        }
+      });
+    });
+
+    // Registration form handling
+    document.getElementById('registration-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = {};
+      
+      // Convert FormData to regular object
+      for (let [key, value] of formData.entries()) {
+        if (data[key]) {
+          if (Array.isArray(data[key])) {
+            data[key].push(value);
+          } else {
+            data[key] = [data[key], value];
+          }
+        } else {
+          data[key] = value;
+        }
+      }
+      
+      // Show success message (in a real app, this would submit to a server)
+      alert('Thank you for registering! You will receive a confirmation email shortly.');
+      
+      // Reset form
+      this.reset();
+    });
+
+    // Navigation scroll spy
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let currentSection = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('scrollspy-active');
+        if (link.getAttribute('href') === '#' + currentSection) {
+          link.classList.add('scrollspy-active');
+        }
+      });
+    });
+
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
