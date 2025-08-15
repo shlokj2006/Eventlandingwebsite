@@ -1,71 +1,78 @@
-# Welcome to your Wowdevai project
 
-## Project info
+# Event Landing Website
 
-**URL**: https://wowdev.ai/chat/689f1e3b0f0d46b5cc4e1310
+This is a modern, responsive event landing page project built using React and Tailwind CSS. It’s designed to showcase event details clearly and attractively, providing visitors with all the necessary information and easy ways to register or learn more.
 
-## How can I edit this code?
+## Project Overview
 
-There are several ways of editing your application.
+- **Built With:**  
+  - JavaScript  
+  - React  
+  - Tailwind CSS  
 
-**Use Wowdevai**
+- **Purpose:**  
+  Create a clean, user-friendly single-page website to promote events, including event information, schedule, registration, and contact details.
 
-Simply visit the [Wowdevai Project](https://wowdev.ai/chat/689f1e3b0f0d46b5cc4e1310) and start prompting.
+## Features
 
-Changes made via Wowdevai will be committed automatically to this repo.
+- Responsive design for seamless viewing on desktop and mobile devices.
+- Interactive sections to display event details, schedules, speakers, venue maps, and sponsors.
+- Easy-to-use registration or RSVP forms.
+- Visually appealing layout with Tailwind CSS utility classes.
+- Fast development with React’s component-based structure.
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Wowdevai.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js and npm installed on your machine.
+- Git for cloning the repository.
 
-Follow these steps:
+### Installation Steps
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the repository:**  
+   ```
+   git clone https://github.com/shlokj2006/Eventlandingwebsite.git
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Navigate to the project directory:**  
+   ```
+   cd Eventlandingwebsite
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. **Install dependencies:**  
+   ```
+   npm install
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+4. **Start the development server:**  
+   ```
+   npm run dev
+   ```
+
+5. Open your browser and go to `http://localhost:3000` (or the port shown in console) to view the site.
+
+## How to Edit
+
+- Edit React components located in the `src` folder.
+- Tailwind CSS is used for styling; customize via the `tailwind.config.js` as needed.
+- Changes are hot-reloaded automatically during development.
+
+## Deployment
+
+This project can be deployed using any static site hosting service that supports React apps, such as Vercel, Netlify, or GitHub Pages.
+
+
+
+## Contributing
+
+Feel free to fork the repo, create branches, and submit pull requests. Please ensure your code follows the project style and passes all tests (if any).
+
+## License
+
+Specify your license here (e.g., MIT License).
+
+---
+
+Thank you for checking out this Event Landing Website! For any questions or feedback, please create an issue or contact the project owner.
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- JavaScript
-- React
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Wowdevai](https://wowdev.ai/chat/689f1e3b0f0d46b5cc4e1310) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Wowdevai project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.wowdevai.dev/tips-tricks/custom-domain#step-by-step-guide)
