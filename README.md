@@ -3,6 +3,8 @@
 
 This is a modern, responsive event landing page project built using React and Tailwind CSS. It’s designed to showcase event details clearly and attractively, providing visitors with all the necessary information and easy ways to register or learn more.
 
+Live link : https://eventlandingsiteproject.netlify.app/
+
 ## Project Overview
 
 - **Built With:**  
@@ -70,7 +72,7 @@ Feel free to fork the repo, create branches, and submit pull requests. Please en
 
 ## License
 
-Specify your license here (e.g., MIT License).
+MIT License.
 
 ---
 
